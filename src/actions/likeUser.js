@@ -1,4 +1,3 @@
-import {buyers} from '../data/userData'
 
 export const LIKE_USER = 'LIKE_USER'
 

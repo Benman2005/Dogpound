@@ -8,18 +8,15 @@ import { likeUser } from '../actions/likeFunction'
 class SellerPage extends PureComponent {
     componentDidMount() {
         this.props.showUser()
-        // this.props.likeUser()
     }
     
-    // handleClick = () => {
-    //     this.props.showUser()
-    //     this.props.likeUser()
+    handleClick = () => {
+        // this.props.showUser()
+        this.props.likeUser()
 
-    // }
+    }
     
     render(){
-        
-
         return (
         <div>
             <h1>Sell your dog! 
@@ -41,7 +38,7 @@ class SellerPage extends PureComponent {
             
             <div>
                 <button id="likers" name = "dislike">ME NO LIKE!</button> 
-                <button id="likers" name="like" onClick={likeUser()}>LIKE!</button> 
+                <button id="likers" name="like" onClick={this.handleClick}>LIKE!</button> 
             </div>
         </div>
         )
@@ -50,7 +47,8 @@ class SellerPage extends PureComponent {
 
 const mapStateToProps = (state) => {
     return {
-        user: state.currentUser
+        user: state.currentUser,
+        liked: state.likeFunction
     }
 }
 
