@@ -1,4 +1,4 @@
-import {buyers} from '../data/userData'
+import {userData} from '../data/userData'
 
 export const DISLIKED_USER = 'DISLIKED_USER'
 
