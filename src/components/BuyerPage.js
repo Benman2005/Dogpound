@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import { connect } from 'react-redux';
 import { showBuyer } from '../actions/showBuyer';
-// import { dislike } from '../actions/disLikedFunction';
+import { dislike } from '../actions/disLikeFunction';
 
 export  class BuyerPage extends PureComponent {
     componentDidMount(){
@@ -11,6 +11,11 @@ export  class BuyerPage extends PureComponent {
     // dislike = () => {
     //     // adds the user id to the disliked array and show the next user
     // }
+    handleClick = () => {
+        this.props.showBuyer()
+        this.props.dislike(this.props.user)
+
+    }
 
     render(){
 
@@ -20,7 +25,7 @@ export  class BuyerPage extends PureComponent {
          
             <img src ={this.props.user.photo}></img>
             <div>
-                <button id="dislikers" name = "dislike">ME NO LIKE!</button> 
+                <button id="dislikers" name = "dislike" onClick ={this.handleClick}>ME NO LIKE!</button> 
                 <button id="likers" name="like">LIKE!</button> 
             </div>
         </div>
@@ -31,8 +36,8 @@ export  class BuyerPage extends PureComponent {
 const mapStateToProps = (state) => {
     return {
         user: state.showBuyer,
-        dislike: state.id
+        disliked: state.likeFunction
     }
 }
 
-export default connect(mapStateToProps, {showBuyer}) (BuyerPage)
+export default connect(mapStateToProps, {showBuyer, dislike}) (BuyerPage)
