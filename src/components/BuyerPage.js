@@ -1,12 +1,23 @@
 import React, { PureComponent } from 'react';
+import { connect } from 'react-redux';
+import { showBuyer } from '../actions/showBuyer';
 
-export default class StartPage extends PureComponent {
+export  class BuyerPage extends PureComponent {
+    componentDidMount(){
+        this.props.showBuyer()
+    }
     render(){
 
         return (
         <div>
-            <h1>So you wanna buy a doggy..</h1>
+            <h1></h1>
         </div>
         )
     }
 }
+
+const mapStateToProps = (state) => {
+    user: state.showBuyer
+}
+
+export default connect(mapStateToProps, {showBuyer}) (BuyerPage)
