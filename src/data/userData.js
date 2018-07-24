@@ -3,7 +3,7 @@ export const userData = [{
     name: "Burt",
     age: 12,
     description: "I love long walks on the beach. Naked.",
-    photo: "image",
+    photo: "https://cdn.images.express.co.uk/img/dynamic/79/590x/02f22reynolds1-494677.jpg",
     type: "buyer"
 },
 {
@@ -74,3 +74,5 @@ export const userData = [{
 
 }
 ]
+
+export const buyers = userData.filter(function (obj) { return obj.type === "buyer"; });
