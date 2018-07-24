@@ -11,8 +11,9 @@ export const userData = [{
     name: "Dick",
     age: 34,
     description: "I love dogs, like really love them. Naked.",
-    photo: "image",
-    type: "buyer"
+    photo: "https://cdn.psychologytoday.com/sites/default/files/styles/article-inline-half/public/field_blog_entry_images/2018-02/vicious_dog_0.png?itok=nsghKOHs",
+    type: "buyer",
+    
 },
 {
     id: 3,
