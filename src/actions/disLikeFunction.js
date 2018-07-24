@@ -1,11 +1,9 @@
-import {userData} from '../data/userData'
-
-export const DISLIKED_USER = 'DISLIKED_USER'
+export const DISLIKE_USER = 'DISLIKE_USER'
 
 
 export function dislike (disliked) {
     return {
-        type: "DISLIKED_USER",
+        type: DISLIKE_USER,
         payload: disliked
     }
 }
