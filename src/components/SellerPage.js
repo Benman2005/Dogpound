@@ -47,7 +47,8 @@ class SellerPage extends PureComponent {
 
 const mapStateToProps = (state) => {
     return {
-        user: state.currentUser
+        user: state.currentUser,
+        liked: state.likeFunction
     }
 }
 
