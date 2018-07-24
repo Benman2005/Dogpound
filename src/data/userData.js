@@ -77,3 +77,5 @@ export const userData = [{
 ]
 
 export const buyers = userData.filter(function (obj) { return obj.type === "buyer"; });
+
+export const sellers = userData.filter(function (obj) { return obj.type === "seller"; });
