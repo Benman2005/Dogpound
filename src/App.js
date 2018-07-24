@@ -11,14 +11,16 @@ class App extends Component {
   render() {
     return (
       <Provider store={store}>
-  
+              <div className="App">
+
 
       <div> 
         <main>
         <Route exact path="/" component={HomePage} />
-        <Route exact path="/IamABuyer" component={BuyerPage} />
-        <Route exact path="/IamASeller" component={SellerPage} />
+        <Route exact path="/buy" component={BuyerPage} />
+        <Route exact path="/sell" component={SellerPage} />
         </main> 
+      </div>
       </div>
       </Provider>
     );

@@ -5,7 +5,7 @@ export default class StartPage extends PureComponent {
 
         return (
         <div>
-            BUYERPAGE
+            <h1>So you wanna buy a doggy..</h1>
         </div>
         )
     }

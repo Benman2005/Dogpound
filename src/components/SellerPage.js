@@ -5,8 +5,13 @@ export default class StartPage extends PureComponent {
 
         return (
         <div>
-            SELLERPAGE
+            <h1>Sell your dog! 
+            Have a look at this one:</h1>
+            <div>
+            </div>
+
         </div>
         )
     }
 }
+
