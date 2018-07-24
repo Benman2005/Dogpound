@@ -1,8 +1,7 @@
 import React, { PureComponent } from 'react';
-import { userData } from '../data/userData'
 import { connect } from 'react-redux'
 import { showUser } from '../actions/showUser';
-import { likeUser } from '../actions/likeFunction'
+import { likeUser } from '../actions/likeUser'
 
 
 class SellerPage extends PureComponent {
@@ -11,8 +10,8 @@ class SellerPage extends PureComponent {
     }
     
     handleClick = () => {
-        // this.props.showUser()
-        this.props.likeUser()
+        this.props.showUser()
+        this.props.likeUser(this.props.user)
 
     }
     

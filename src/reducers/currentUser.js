@@ -1,4 +1,3 @@
-import {userData} from '../data/userData'
 import {SHOW_USER} from '../actions/showUser'
 
 const initialState = []
