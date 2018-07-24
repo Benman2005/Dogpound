@@ -2,12 +2,20 @@ import React, { PureComponent } from 'react';
 import { userData } from '../data/userData'
 import { connect } from 'react-redux'
 import { showUser } from '../actions/showUser';
+import { likeUser } from '../actions/likeFunction'
 
 
 class SellerPage extends PureComponent {
     componentDidMount() {
         this.props.showUser()
+        // this.props.likeUser()
     }
+    
+    // handleClick = () => {
+    //     this.props.showUser()
+    //     this.props.likeUser()
+
+    // }
     
     render(){
         
@@ -33,11 +41,7 @@ class SellerPage extends PureComponent {
             
             <div>
                 <button id="likers" name = "dislike">ME NO LIKE!</button> 
-                <button id="likers" name="like">LIKE!</button> 
-            </div>
-
-                <button id="switch">></button>
-            <div>
+                <button id="likers" name="like" onClick={likeUser()}>LIKE!</button> 
             </div>
         </div>
         )
@@ -52,4 +56,4 @@ const mapStateToProps = (state) => {
 
 
 
-export default connect (mapStateToProps, {showUser})(SellerPage)
+export default connect (mapStateToProps, {showUser, likeUser})(SellerPage)
