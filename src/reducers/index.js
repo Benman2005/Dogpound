@@ -3,6 +3,6 @@ import currentUser from './currentUser'
 import showBuyer from './showBuyer'
 
 export default combineReducers({
-  currentUser
+  currentUser,
   showBuyer
 })
