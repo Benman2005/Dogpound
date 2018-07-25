@@ -11,9 +11,6 @@ export  class BuyerPage extends PureComponent {
         
     }
 
-    // dislike = () => {
-    //     // adds the user id to the disliked array and show the next user
-    // }
     handleDislike = () => {
         this.props.showSeller()
         this.props.dislikeUser(this.props.user.id)
@@ -30,7 +27,7 @@ export  class BuyerPage extends PureComponent {
             display: 'block',
             
           }
-    //    (this.reaction.active ? "Like" : "Dislike")
+
         return (
             <div>
             <div>
