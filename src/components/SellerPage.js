@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import { connect } from 'react-redux'
-import { showUser } from '../actions/showUser';
+import { showBuyer } from '../actions/showBuyer';
 import { likeUser } from '../actions/likeUser'
 import { dislike } from '../actions/disLikeFunction';
 import { showBuyer } from '../actions/showBuyer';
@@ -12,12 +12,12 @@ class SellerPage extends PureComponent {
         this.props.showBuyer()
     }
     
-    handleClick = () => {
-        this.props.showUser()
+    handleLike = () => {
+        this.props.showBuyer()
         this.props.likeUser(this.props.user)
 
     }
-    handleBuyer = () => {
+    handleDislike = () => {
         this.props.showBuyer()
         this.props.dislike(this.props.user)
 
@@ -50,8 +50,8 @@ class SellerPage extends PureComponent {
             </div>
             
             <div>
-            <button className="dislike" name = "dislike" onClick ={this.handleBuyer}>ME NO LIKE!</button> 
-            <button className="like" name="like" onClick={this.handleClick}>LIKE!</button> 
+            <button className="dislike" name = "dislike" onClick ={this.handleDislike}>ME NO LIKE!</button> 
+            <button className="like" name="like" onClick={this.handleLike}>LIKE!</button> 
     
             </div>
             </div>
@@ -70,4 +70,6 @@ const mapStateToProps = (state) => {
 
 
 
-export default connect (mapStateToProps, {showUser,showBuyer, likeUser, dislike})(SellerPage)
+
+export default connect (mapStateToProps, {showBuyer, likeUser, dislike})(SellerPage)
+

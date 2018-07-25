@@ -14,9 +14,12 @@ const reducer = (state = initialState, action = {}) => {
     ...state, 
       liked: [...state.liked, action.payload]
     }
-      // case DISLIKE_USER: 
-      // return [...state, action.payload, disliked[action.payload]]
-
+    
+    case DISLIKE_USER: 
+    return {
+      ...state, 
+      disliked: [...state.disliked, action.payload]
+    }
         default:
         return state
       

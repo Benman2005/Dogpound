@@ -1,10 +1,10 @@
-import {SHOW_USER} from '../actions/showUser'
+import {SHOW_SELLER} from '../actions/showSeller'
 
 const initialState = []
 
 const reducer = (state = initialState, action = {}) => {
     switch (action.type) {
-    case SHOW_USER: 
+    case SHOW_SELLER: 
     return action.payload
     
       default:
