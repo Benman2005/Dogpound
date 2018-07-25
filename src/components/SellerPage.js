@@ -4,6 +4,7 @@ import { showBuyer } from '../actions/showBuyer';
 import { likeUser } from '../actions/likeUser'
 import { dislikeUser } from '../actions/disLikeFunction';
 import { setMatches } from '../actions/matched'
+import Matches from './Matches'
 
 
 class SellerPage extends PureComponent {
@@ -55,6 +56,8 @@ class SellerPage extends PureComponent {
             <button  name="like" onClick={this.handleLike}>LIKE!</button> 
     
             </div>
+
+            <Matches matched={this.props.matched} />
         </div>
         )
     }
