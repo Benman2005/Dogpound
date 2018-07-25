@@ -1,10 +1,10 @@
 import { combineReducers } from 'redux'
-import currentUser from './currentUser'
-import showBuyer from './showBuyer'
-import likeFunction from './likeFunction'
+import showSeller from './showSellerRed'
+import showBuyer from './showBuyerRed'
+import likeFunction from './likeFunctionRed'
 
 export default combineReducers({
-  currentUser,
+  showSeller,
   showBuyer,
   likeFunction
 })
