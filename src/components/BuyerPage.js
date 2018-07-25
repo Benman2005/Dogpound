@@ -37,10 +37,10 @@ export  class BuyerPage extends PureComponent {
             <div>
             <div>
             <h1>Buy Dog Here!</h1>     
-            <img src ={this.props.user.photo}></img>
+            <img className = "profileImage" src ={this.props.user.photo}></img>
            </div>
-            <button name = "dislike" onClick ={this.handleDislike}>ME NO LIKE!</button> 
-            <button name="like" onClick={this.handleLike}>LIKE!</button> 
+            <button className = "dislike" onClick ={this.handleDislike}>ME NO LIKE!</button> 
+            <button className="like" onClick={this.handleLike}>LIKE!</button> 
             </div>
         )
     }
