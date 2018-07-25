@@ -4,7 +4,9 @@ export const userData = [{
     age: 12,
     description: "I love long walks on the beach. Naked.",
     photo: "https://cdn.images.express.co.uk/img/dynamic/79/590x/02f22reynolds1-494677.jpg",
-    type: "buyer"
+    type: "buyer",
+    liked: [11],
+    disliked: []
 },
 {
     id: 2,
@@ -13,6 +15,8 @@ export const userData = [{
     description: "I love dogs, like really love them. Naked.",
     photo: "image",
     type: "buyer",
+    liked: [],
+    disliked: []
     
 },
 {
@@ -21,7 +25,9 @@ export const userData = [{
     age: 56,
     description: "Hearting dogs since my wife passed.",
     photo: "image",
-    type: "buyer"
+    type: "buyer",
+    liked: [11],
+    disliked: []
 },
 {
     id: 4,
@@ -29,7 +35,9 @@ export const userData = [{
     age: 45,
     description: "Got dogs?",
     photo: "image",
-    type: "buyer"
+    type: "buyer",
+    liked: [],
+    disliked: []
 },
 {
     id: 5,
@@ -37,7 +45,9 @@ export const userData = [{
     age: 8,
     description: "some text some text some text some text",
     photo: "image",
-    type: "seller"
+    type: "seller",
+    liked: [11],
+    disliked: []
 },
 {
     id: 6,
@@ -45,7 +55,9 @@ export const userData = [{
     age: 2,
     description: "some text some text some text some text",
     photo: "https://cdn.psychologytoday.com/sites/default/files/styles/article-inline-half/public/field_blog_entry_images/2018-02/vicious_dog_0.png?itok=nsghKOHs",
-    type: "seller"
+    type: "seller",
+    liked: [],
+    disliked: []
 },
 {
     id: 7,
@@ -53,7 +65,9 @@ export const userData = [{
     age: 11,
     description: "some text some text some text some text",
     photo: "img1",
-    type: "seller"
+    type: "seller",
+    liked: [11],
+    disliked: []
 
 },
 {
@@ -62,7 +76,9 @@ export const userData = [{
     age: 13,
     description: "some text some text some text some text",
     photo: "img1",
-    type: "seller"
+    type: "seller",
+    liked: [],
+    disliked: []
 
 },
 {
@@ -71,7 +87,9 @@ export const userData = [{
     age: 99,
     description: "some text some text some text some text",
     photo: "img1",
-    type: "seller"
+    type: "seller",
+    liked: [11],
+    disliked: []
 
 }
 ]
