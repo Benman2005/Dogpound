@@ -3,12 +3,17 @@ import { connect } from 'react-redux';
 import { showSeller} from '../actions/showSeller';
 import { dislikeUser } from '../actions/disLikeFunction';
 import { likeUser } from '../actions/likeUser'
+import { setMatches } from '../actions/matched'
 import '../App.css';
 
 export  class BuyerPage extends PureComponent {
     componentDidMount(){
         this.props.showSeller()
         
+    }
+
+    checkMatch = (likedUser) => {
+        if (this.props.user.liked.includes(11) === true) {return setMatches()}
     }
 
     handleDislike = () => {
@@ -19,7 +24,7 @@ export  class BuyerPage extends PureComponent {
     handleLike = () => {
         this.props.showSeller()
         this.props.likeUser(this.props.user.liked.id)
-
+        this.checkMatch(this.props.user.id)
     }
     
     render() {
@@ -45,11 +50,12 @@ const mapStateToProps = (state) => {
     return {
         user: state.showSeller,
         liked: state.likeFunction.liked, 
-        disliked: state.likeFunction.disliked
+        disliked: state.likeFunction.disliked,
+        matched: state.likeFunction.matched
     }
 }
 
 
-export default connect(mapStateToProps, {showSeller, dislikeUser, likeUser}) (BuyerPage)
+export default connect(mapStateToProps, {showSeller, dislikeUser, likeUser, setMatches}) (BuyerPage)
 
 
