@@ -5,6 +5,8 @@ import { likeUser } from '../actions/likeUser'
 import { dislikeUser } from '../actions/disLikeFunction';
 import { setMatches } from '../actions/matched'
 import Matches from './Matches'
+import { Link } from 'react-router-dom'
+
 
 
 class SellerPage extends PureComponent {
@@ -57,7 +59,10 @@ class SellerPage extends PureComponent {
     
             </div>
 
-            <Matches matched={this.props.matched} />
+             <div>
+            <button><Link to="/matches">See your matches</Link></button>
+            </div>
+            {/* <Matches matched={this.props.matched} /> */}
         </div>
         )
     }
