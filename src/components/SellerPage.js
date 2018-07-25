@@ -12,12 +12,12 @@ class SellerPage extends PureComponent {
     
     handleLike = () => {
         this.props.showBuyer()
-        this.props.likeUser(this.props.user)
+        this.props.likeUser(this.props.user.id)
 
     }
     handleDislike = () => {
         this.props.showBuyer()
-        this.props.dislikeUser(this.props.user)
+        this.props.dislikeUser(this.props.user.id)
 
     }
     

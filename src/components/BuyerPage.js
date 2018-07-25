@@ -16,12 +16,12 @@ export  class BuyerPage extends PureComponent {
     // }
     handleDislike = () => {
         this.props.showSeller()
-        this.props.dislikeUser(this.props.user)
+        this.props.dislikeUser(this.props.user.id)
 
     }
     handleLike = () => {
         this.props.showSeller()
-        this.props.likeUser(this.props.user)
+        this.props.likeUser(this.props.user.id)
 
     }
     
