@@ -1,16 +1,16 @@
 import React, { PureComponent } from 'react';
 import { connect } from 'react-redux'
-import { showUser } from '../actions/showUser';
+import { showBuyer } from '../actions/showBuyer';
 import { likeUser } from '../actions/likeUser'
 
 
 class SellerPage extends PureComponent {
     componentDidMount() {
-        this.props.showUser()
+        this.props.showBuyer()
     }
     
     handleClick = () => {
-        this.props.showUser()
+        this.props.showBuyer()
         this.props.likeUser(this.props.user)
 
     }
@@ -61,4 +61,4 @@ const mapStateToProps = (state) => {
 
 
 
-export default connect (mapStateToProps, {showUser, likeUser})(SellerPage)
+export default connect (mapStateToProps, {showBuyer, likeUser})(SellerPage)
