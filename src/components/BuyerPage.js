@@ -13,18 +13,18 @@ export  class BuyerPage extends PureComponent {
     }
 
     checkMatch = (likedUser) => {
-        if (this.props.user.liked.includes(11) === true) {return setMatches()}
+        if (this.props.user.liked.includes(11) === true) {return this.props.setMatches(this.props.user)}
     }
 
     handleDislike = () => {
         this.props.showSeller()
-        this.props.dislikeUser(this.props.user.liked.id)
+        this.props.dislikeUser(this.props.user.id)
 
     }
     handleLike = () => {
         this.props.showSeller()
-        this.props.likeUser(this.props.user.liked.id)
-        this.checkMatch(this.props.user.id)
+        this.props.likeUser(this.props.user.id)
+        this.checkMatch(this.props.user)
     }
     
     render() {
