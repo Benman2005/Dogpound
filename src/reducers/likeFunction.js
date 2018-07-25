@@ -4,7 +4,7 @@ import {DISLIKE_USER} from '../actions/disLikeFunction'
 const disliked = []
 const liked =[]
 
-const initialState = {  liked, disliked} 
+const initialState = { liked, disliked} 
 
 const reducer = (state = initialState, action = {}) => {
     switch (action.type) {
