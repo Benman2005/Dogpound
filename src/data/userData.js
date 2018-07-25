@@ -13,7 +13,7 @@ export const userData = [{
     name: "Dick",
     age: 34,
     description: "I love dogs, like really love them. Naked.",
-    photo: "image",
+    photo: "https://images-na.ssl-images-amazon.com/images/I/51b8Km-8V2L.jpg",
     type: "buyer",
     liked: [],
     disliked: []
@@ -24,7 +24,7 @@ export const userData = [{
     name: "Melvin",
     age: 56,
     description: "Hearting dogs since my wife passed.",
-    photo: "image",
+    photo: "https://celebrityspeakersbureau.com/wp-content/uploads/2017/01/chuck-norris.jpg",
     type: "buyer",
     liked: [11],
     disliked: []
@@ -34,7 +34,7 @@ export const userData = [{
     name: "Dwight",
     age: 45,
     description: "Got dogs?",
-    photo: "image",
+    photo: "https://cdn.images.dailystar.co.uk/dynamic/1/281x351/181580_1.jpg",
     type: "buyer",
     liked: [],
     disliked: []
@@ -44,7 +44,7 @@ export const userData = [{
     name: "Tommy",
     age: 8,
     description: "some text some text some text some text",
-    photo: "image",
+    photo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-hoES3DgrGpl4fNpk_KZwBSItx9o1vAkQmUCPiu1mh2j-5-oT",
     type: "seller",
     liked: [11],
     disliked: []
@@ -64,7 +64,7 @@ export const userData = [{
     name: "Dirk",
     age: 11,
     description: "some text some text some text some text",
-    photo: "img1",
+    photo: "https://www.dog-health-guide.org/image-files/newsite-main-banner.jpg",
     type: "seller",
     liked: [11],
     disliked: []
@@ -75,7 +75,7 @@ export const userData = [{
     name: "Sean",
     age: 13,
     description: "some text some text some text some text",
-    photo: "img1",
+    photo: "https://news.liverpool.ac.uk/wp-content/uploads/2016/01/Fat-dog.jpg",
     type: "seller",
     liked: [],
     disliked: []
@@ -86,7 +86,7 @@ export const userData = [{
     name: "Bart",
     age: 99,
     description: "some text some text some text some text",
-    photo: "img1",
+    photo: "http://www.repstatic.it/content/localirep/img/rep-firenze/2015/12/25/182827200-41eb5066-759b-4d31-b0a0-008a1ea9b9f8.jpg",
     type: "seller",
     liked: [11],
     disliked: []
