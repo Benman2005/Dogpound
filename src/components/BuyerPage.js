@@ -2,11 +2,14 @@ import React, { PureComponent } from 'react';
 import { connect } from 'react-redux';
 import { showSeller} from '../actions/showSeller';
 import { dislike } from '../actions/disLikeFunction';
+import { likeUser } from '../actions/likeUser'
+import { showUser } from '../actions/showUser';
 import '../App.css';
 
 export  class BuyerPage extends PureComponent {
     componentDidMount(){
         this.props.showSeller()
+        this.props.showUser()
     }
 
     // dislike = () => {
@@ -17,7 +20,12 @@ export  class BuyerPage extends PureComponent {
         this.props.dislike(this.props.user)
 
     }
+    handleClick = () => {
+        this.props.showUser()
+        this.props.likeUser(this.props.user)
 
+    }
+    
     render() {
         const displayStyle = {
             display: 'block',
@@ -48,4 +56,7 @@ const mapStateToProps = (state) => {
     }
 }
 
-export default connect(mapStateToProps, {showSeller, dislike}) (BuyerPage)
+
+export default connect(mapStateToProps, {showSeller, dislike, likeUser}) (BuyerPage)
+
+
