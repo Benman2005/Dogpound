@@ -33,17 +33,13 @@ export  class BuyerPage extends PureComponent {
     //    (this.reaction.active ? "Like" : "Dislike")
         return (
             <div>
-            <div className="container">
-            <div className="buddy" style={displayStyle}>
+            <div>
             <h1>Buy Dog Here!</h1>     
             <img src ={this.props.user.photo}></img>
+           </div>
+            <button name = "dislike" onClick ={this.handleDislike}>ME NO LIKE!</button> 
+            <button name="like" onClick={this.handleLike}>LIKE!</button> 
             </div>
-            <button className="dislike" name = "dislike" onClick ={this.handleDislike}>ME NO LIKE!</button> 
-                <button className="like" name="like" onClick={this.handleLike}>LIKE!</button> 
-            </div>
-           
-            </div>
-       
         )
     }
 }
