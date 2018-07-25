@@ -5,7 +5,7 @@ export const userData = [{
     description: "I love long walks on the beach. Naked.",
     photo: "https://cdn.images.express.co.uk/img/dynamic/79/590x/02f22reynolds1-494677.jpg",
     type: "buyer",
-    liked: [11],
+    liked: [9, 7, 5],
     disliked: []
 },
 {
@@ -15,7 +15,7 @@ export const userData = [{
     description: "I love dogs, like really love them. Naked.",
     photo: "image",
     type: "buyer",
-    liked: [],
+    liked: [7, 6],
     disliked: []
     
 },
@@ -26,7 +26,7 @@ export const userData = [{
     description: "Hearting dogs since my wife passed.",
     photo: "image",
     type: "buyer",
-    liked: [11],
+    liked: [9, 8],
     disliked: []
 },
 {
@@ -36,7 +36,7 @@ export const userData = [{
     description: "Got dogs?",
     photo: "image",
     type: "buyer",
-    liked: [],
+    liked: [5, 8, 9],
     disliked: []
 },
 {
@@ -46,7 +46,7 @@ export const userData = [{
     description: "some text some text some text some text",
     photo: "image",
     type: "seller",
-    liked: [11],
+    liked: [1, 3],
     disliked: []
 },
 {
@@ -56,7 +56,7 @@ export const userData = [{
     description: "some text some text some text some text",
     photo: "https://cdn.psychologytoday.com/sites/default/files/styles/article-inline-half/public/field_blog_entry_images/2018-02/vicious_dog_0.png?itok=nsghKOHs",
     type: "seller",
-    liked: [],
+    liked: [2, 4],
     disliked: []
 },
 {
@@ -66,7 +66,7 @@ export const userData = [{
     description: "some text some text some text some text",
     photo: "img1",
     type: "seller",
-    liked: [11],
+    liked: [1, 3],
     disliked: []
 
 },
@@ -77,7 +77,7 @@ export const userData = [{
     description: "some text some text some text some text",
     photo: "img1",
     type: "seller",
-    liked: [],
+    liked: [3, 4],
     disliked: []
 
 },
@@ -88,7 +88,7 @@ export const userData = [{
     description: "some text some text some text some text",
     photo: "img1",
     type: "seller",
-    liked: [11],
+    liked: [4],
     disliked: []
 
 }
