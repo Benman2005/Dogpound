@@ -15,7 +15,7 @@ class SellerPage extends PureComponent {
     checkMatch = (likedUser) => {
         // const foundId = buyers.id.filter(buyer => buyer === this.props.user.id)
         
-        if (this.props.user.liked.includes(11) === true) {return setMatches()}
+        if (this.props.user.liked.includes(11) === true) {return this.props.setMatches(this.props.user)}
     }
 
 
