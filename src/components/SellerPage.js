@@ -3,16 +3,25 @@ import { connect } from 'react-redux'
 import { showBuyer } from '../actions/showBuyer';
 import { likeUser } from '../actions/likeUser'
 import { dislikeUser } from '../actions/disLikeFunction';
+import { setMatches } from '../actions/matched'
 
 
 class SellerPage extends PureComponent {
     componentDidMount() {
         this.props.showBuyer()
+
     }
     
+    checkMatch = (likedUser) => {
+        // const foundId = buyers.id.filter(buyer => buyer === this.props.user.id)
+        
+        if (this.props.user.liked.includes(11) === true) {return setMatches()}
+    }
+
     handleLike = () => {
         this.props.showBuyer()
         this.props.likeUser(this.props.user.id)
+        this.checkMatch(this.props.user.id)
 
     }
     handleDislike = () => {
@@ -20,14 +29,15 @@ class SellerPage extends PureComponent {
         this.props.dislikeUser(this.props.user.id)
 
     }
+
+   
     
     render(){
-        
         return (
         <div>
             <h1>Sell your dog! 
             Have a look at our trusted buyers:</h1>
-            {console.log(this.props.user)}
+        
             <div> 
                 <img src={this.props.user.photo}></img>
             </div>
@@ -55,12 +65,13 @@ const mapStateToProps = (state) => {
     return {
         user: state.showBuyer,
         liked: state.likeFunction.liked,
-        disliked: state.likeFunction.disliked
+        disliked: state.likeFunction.disliked,
+        matched: state.likeFunction.matched
     }
 }
 
 
 
 
-export default connect (mapStateToProps, {showBuyer, likeUser, dislikeUser})(SellerPage)
+export default connect (mapStateToProps, {showBuyer, likeUser, dislikeUser, setMatches})(SellerPage)
 
