@@ -18,18 +18,17 @@ class SellerPage extends PureComponent {
         if (this.props.user.liked.includes(11) === true) {return setMatches()}
     }
 
+
+    handleDislike = () => {
+        this.props.showBuyer()
+        this.props.dislikeUser(this.props.user.id)
+    }
+
     handleLike = () => {
         this.props.showBuyer()
         this.props.likeUser(this.props.user.id)
         this.checkMatch(this.props.user.id)
-
     }
-    handleDislike = () => {
-        this.props.showBuyer()
-        this.props.dislikeUser(this.props.user.id)
-
-    }
-
    
     
     render(){
