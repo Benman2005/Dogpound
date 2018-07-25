@@ -22,14 +22,9 @@ class SellerPage extends PureComponent {
     }
     
     render(){
-        const displayStyle = {
-            display: 'block',
-            
-          }
+        
         return (
         <div>
-            <div className="container">
-            <div className="buddy" style={displayStyle}>
             <h1>Sell your dog! 
             Have a look at our trusted buyers:</h1>
             {console.log(this.props.user)}
@@ -45,13 +40,11 @@ class SellerPage extends PureComponent {
             <div>
                 {this.props.user.description}
             </div>
-            </div>
             
             <div>
-            <button className="dislike" name = "dislike" onClick ={this.handleDislike}>ME NO LIKE!</button> 
-            <button className="like" name="like" onClick={this.handleLike}>LIKE!</button> 
+            <button  name = "dislike" onClick ={this.handleDislike}>ME NO LIKE!</button> 
+            <button  name="like" onClick={this.handleLike}>LIKE!</button> 
     
-            </div>
             </div>
         </div>
         )
