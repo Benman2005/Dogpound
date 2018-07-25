@@ -24,7 +24,7 @@ export const userData = [{
     name: "Melvin",
     age: 56,
     description: "Hearting dogs since my wife passed.",
-    photo: "https://s3.amazonaws.com/mf-cnorris/assets/uploads/2016/10/19123509/timeline-05.jpg",
+    photo: "https://celebrityspeakersbureau.com/wp-content/uploads/2017/01/chuck-norris.jpg",
     type: "buyer",
     liked: [11],
     disliked: []
@@ -34,7 +34,7 @@ export const userData = [{
     name: "Dwight",
     age: 45,
     description: "Got dogs?",
-    photo: "https://pmchollywoodlife.files.wordpress.com/2016/07/jean-claude-van-damme-rex-5.jpg?w=600",
+    photo: "https://cdn.images.dailystar.co.uk/dynamic/1/281x351/181580_1.jpg",
     type: "buyer",
     liked: [],
     disliked: []
