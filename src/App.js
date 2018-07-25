@@ -6,21 +6,25 @@ import { Provider } from 'react-redux';
 import HomePage from './components/HomePage'
 import BuyerPage from './components/BuyerPage'
 import SellerPage from './components/SellerPage'
+import createUser from './components/createUser'
 
 class App extends Component {
   render() {
     return (
       <Provider store={store}>
-              <div className="App">
+
+        <div className="App">
+          <header className="App-header"></header>
 
 
-      <div> 
-        <main>
-        <Route exact path="/" component={HomePage} />
-        <Route exact path="/buy" component={BuyerPage} />
-        <Route exact path="/sell" component={SellerPage} />
-        </main> 
-      </div>
+        <div> 
+          <main>
+            <Route exact path="/" component={HomePage} />
+            <Route exact path="/buy" component={BuyerPage} />
+            <Route exact path="/sell" component={SellerPage} />
+            <Route exact path="/createUser" component={createUser} />
+          </main> 
+        </div>
       </div>
       </Provider>
     );
