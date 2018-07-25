@@ -6,4 +6,4 @@ export function likeUser(liked) {
       payload: liked
 
     }
-  }
+  } 
