@@ -6,4 +6,4 @@ export function dislike (disliked) {
         type: DISLIKE_USER,
         payload: disliked
     }
-}
+} 
