@@ -216,7 +216,7 @@ export const userData = [{
     id: 20,
     name: "iDog",
     age: 12,
-    description: "A tiger screwed my mom thats how I born !!!",
+    description: "A tiger look I got because of my Mom's choice !!!",
     photo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTas3ln0GQKN8R8D6tPz6Y9OT5dl64Aj_780x23bVrK5P_7iP6Kyw",
     type: "seller",
     liked: [4, 10],
