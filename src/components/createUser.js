@@ -26,7 +26,7 @@ class createUser extends PureComponent {
 
     handleSubmit = (event) => {
         event.preventDefault()
-        this.props.newUser(this.state.name, this.state.age, this.state.description,)
+        this.props.newUser(this.state.name, this.state.age, this.state.description)
 
     }
     
@@ -37,12 +37,10 @@ class createUser extends PureComponent {
         return (
             <div>
             
-                <form name="form" onSubmit={this.handleSubmit}>
+                <form name="form" onSubmit={this.handleSubmit} >
                 
                     <label>Name: 
                         <input type='text' name="name" value={this.state.name} onChange={this.handleChange.bind(this)}></input>
-                        {/* onChange={this.handleChange.bind(this) */}
-                        {/* value={this.state.name} */}
                     </label>
                     <label>Age: 
                         <input type='number' onChange={this.handleChange.bind(this)} name="age" value={this.state.age}></input>
@@ -50,7 +48,7 @@ class createUser extends PureComponent {
                     <label>Description:
                         <input type='text' onChange={this.handleChange.bind(this)} name="description" value={this.state.description}></input>
                     </label>
-                
+            
                     <button onSubmit={this.handleSubmit}> SUBMIT JA</button>
                 </form>
             
