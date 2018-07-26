@@ -4,6 +4,8 @@ import { showSeller} from '../actions/showSeller';
 import { dislikeUser } from '../actions/disLikeFunction';
 import { likeUser } from '../actions/likeUser'
 import { setMatches } from '../actions/matched'
+import { Link } from 'react-router-dom'
+
 import '../App.css';
 
 export  class BuyerPage extends PureComponent {
@@ -13,7 +15,12 @@ export  class BuyerPage extends PureComponent {
     }
 
     checkMatch = (likedUser) => {
-        if (this.props.user.liked.includes(11) === true) {return this.props.setMatches(this.props.user)}
+        
+        if (this.props.user.liked.includes(11) === true) {return (
+            this.props.setMatches(this.props.user),
+            window.alert("You have a match!")
+            )
+        }
     }
 
     handleDislike = () => {
@@ -35,12 +42,32 @@ export  class BuyerPage extends PureComponent {
 
         return (
             <div>
-            <div>
-            <h1>Buy Dog Here!</h1>     
-            <img className = "profileImage" src ={this.props.user.photo}></img>
-           </div>
-            <button className = "dislike" onClick ={this.handleDislike}>ME NO LIKE!</button> 
-            <button className="like" onClick={this.handleLike}>LIKE!</button> 
+                <div>
+                    <h1>Buy a doggy! 
+                        Look at these cute little doggies
+                    </h1>     
+                </div>
+                <div>
+                    <img className = "profileImage" src ={this.props.user.photo}></img>
+                </div>
+                <div>
+                    {this.props.user.name}
+                </div>
+                <div>
+                    {this.props.user.age}
+                </div>
+                <div>
+                    {this.props.user.description}
+                </div>
+                <div>
+                </div>
+                <div>
+                    <button className = "dislike" onClick ={this.handleDislike}>ME NO LIKE!</button> 
+                    <button className="like" onClick={this.handleLike}>LIKE!</button> 
+                </div>
+                <div>
+                <button><Link to="/matches">See my matches</Link></button>
+                </div>
             </div>
         )
     }
