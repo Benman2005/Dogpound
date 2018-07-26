@@ -16,11 +16,13 @@ class SellerPage extends PureComponent {
     }
     
     checkMatch = (likedUser) => {
-        // const foundId = buyers.id.filter(buyer => buyer === this.props.user.id)
         
-        if (this.props.user.liked.includes(11) === true) {return this.props.setMatches(this.props.user)}
+        if (this.props.user.liked.includes(11) === true) {return (
+            this.props.setMatches(this.props.user),
+            window.alert("You have a match!")
+            )
+        }
     }
-
 
     handleDislike = () => {
         this.props.showBuyer()
@@ -54,13 +56,11 @@ class SellerPage extends PureComponent {
             </div>
             
             <div>
-            <button  className = "dislike" onClick ={this.handleDislike}>ME NO LIKE!</button> 
-            <button  className="like" onClick={this.handleLike}>LIKE!</button> 
-    
+                <button  className = "dislike" onClick ={this.handleDislike}>ME NO LIKE!</button> 
+                <button  className="like" onClick={this.handleLike}>LIKE!</button> 
             </div>
-
              <div>
-            <button><Link to="/matches">See your matches</Link></button>
+            <button><Link to="/matches">See my matches</Link></button>
             </div>
             {/* <Matches matched={this.props.matched} /> */}
         </div>
