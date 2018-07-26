@@ -62,7 +62,7 @@ class createUser extends PureComponent {
         <div className="container-contact100">
           <div className="wrap-contact100">
             {/* <form class="contact100-form validate-form"> */}
-            <span className="contact100-form-title">Dog Pound</span>
+            <span className="contact100-form-title"><img src="https://i.pinimg.com/originals/d2/cc/2a/d2cc2a2b8da27f79e2bbb1ea59a23f3c.png" width="200px" height="200px"></img></span>
             <form
               className="contact100-form validate-form"
               name="form"
