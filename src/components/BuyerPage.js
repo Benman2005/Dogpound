@@ -16,7 +16,7 @@ export  class BuyerPage extends PureComponent {
 
     checkMatch = (likedUser) => {
         
-        if (this.props.user.liked.includes(11) === true) {return (
+        if (this.props.user.liked.includes(this.props.id) === true) { return (
             this.props.setMatches(this.props.user),
             window.alert("You have a match!")
             )
@@ -43,7 +43,7 @@ export  class BuyerPage extends PureComponent {
         return (
             <div>
                 <div>
-                    <h1>Buy a doggy! 
+                    <h1>
                         Look at these cute little doggies
                     </h1>     
                 </div>
@@ -78,7 +78,8 @@ const mapStateToProps = (state) => {
         user: state.showSeller,
         liked: state.likeFunction.liked, 
         disliked: state.likeFunction.disliked,
-        matched: state.likeFunction.matched
+        matched: state.likeFunction.matched,
+        id: state.likeFunction.id
     }
 }
 

@@ -6,6 +6,7 @@ import { dislikeUser } from '../actions/disLikeFunction';
 import { setMatches } from '../actions/matched'
 import Matches from './Matches'
 import { Link } from 'react-router-dom'
+// import { buyers } from '../data/userData'
 
 
 
@@ -16,7 +17,8 @@ class SellerPage extends PureComponent {
     
     checkMatch = (likedUser) => {
         
-        if (this.props.user.liked.includes(11) === true) {return (
+
+        if (this.props.user.liked.includes(this.props.id) === true) { return (
             this.props.setMatches(this.props.user),
             window.alert("You have a match!")
             )
@@ -38,8 +40,7 @@ class SellerPage extends PureComponent {
     render(){
         return (
         <div>
-            <h1>Sell your dog! 
-            Have a look at our trusted buyers:</h1>
+            <h1></h1>
         
             <div> 
                 <img className = "profileImage" src={this.props.user.photo}></img>
@@ -72,7 +73,8 @@ const mapStateToProps = (state) => {
         user: state.showBuyer,
         liked: state.likeFunction.liked,
         disliked: state.likeFunction.disliked,
-        matched: state.likeFunction.matched
+        matched: state.likeFunction.matched,
+        id: state.likeFunction.id
     }
 }
 
