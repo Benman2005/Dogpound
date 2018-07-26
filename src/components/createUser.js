@@ -32,8 +32,15 @@ class createUser extends PureComponent {
     
     
     render(){
-        console.log(this.state)
+
         if (!this.state) return 'Loading...'
+        if (this.props.name) return (
+            <div>
+                    <button><Link to="/buy">ADOPT!</Link></button>
+
+                    <button><Link to="/sell">GIVE UP up for adoption..</Link></button> 
+            </div>
+        )
         return (
             <div>
             
@@ -53,15 +60,11 @@ class createUser extends PureComponent {
                 </form>
             
                 {this.props.name && `Hi ${this.props.name.toUpperCase()}, are you looking to adopt or sell a dog?`}
-            
-                    {/* <SellerPage name={this.props.name} age={this.props.age} description={this.props.description} /> */}
                     
-                    
-                    
-                    
+{/*                    
                     <button><Link to="/buy">ADOPT!</Link></button>
 
-                    <button><Link to="/sell">GIVE UP up for adoption..</Link></button>
+                    <button><Link to="/sell">GIVE UP up for adoption..</Link></button> } */}
                     
             </div>
 
