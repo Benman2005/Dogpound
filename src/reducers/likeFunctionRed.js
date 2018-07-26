@@ -7,16 +7,10 @@ const initialState = {
   
 }
 
-
-
 const reducer = (state = initialState, action = {}) => {
   switch (action.type) {
     case NEW_USER:
       return action.payload
-        // [...state, action.payload]
-        // {name: [...state.name, action.payload.name],}
-        // age: [...state.age, action.payload.age],
-        // description: [...state.description, action.payload.description]
       
     case LIKE_USER: 
       return {
@@ -34,7 +28,6 @@ const reducer = (state = initialState, action = {}) => {
       ...state,
       matched: [...state.matched, action.payload]
     }
-
         default:
         return state
     } 

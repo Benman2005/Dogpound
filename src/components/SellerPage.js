@@ -12,7 +12,6 @@ import { Link } from 'react-router-dom'
 class SellerPage extends PureComponent {
     componentDidMount() {
         this.props.showBuyer()
-
     }
     
     checkMatch = (likedUser) => {
