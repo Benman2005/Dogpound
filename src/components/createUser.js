@@ -38,12 +38,13 @@ class createUser extends PureComponent {
         if (this.props.type === 'seller') return (
             <div>
                 {`Hi ${this.props.name} so you'd like to give your dog up for adoption...`}
-                <button></button>
+                <button><Link to="/sell"> See available adopters! </Link></button>
             </div> )
 
-        if (this.props.type ==='buyer') return (
+        else if (this.props.type ==='buyer') return (
             <div>
             {`Hi ${this.props.name} so you'd like to adopt a dog...`}
+            <button><Link to="/buy"> Have a look at the dogs! </Link></button>
             </div> )
         
         return (
