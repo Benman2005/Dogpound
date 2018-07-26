@@ -131,11 +131,8 @@ export const userData = [{
     id: 12,
     name: "Rachel",
     age: 2,
-<<<<<<< HEAD
+
     description: "I have the pretiest smile ...:D ",
-=======
-    description: "Yeah my previous owner liked Friends.",
->>>>>>> 951912896d6eb4b7da7e295b3cf53c195fc61361
     photo: "https://cdn.psychologytoday.com/sites/default/files/styles/article-inline-half/public/field_blog_entry_images/2018-02/vicious_dog_0.png?itok=nsghKOHs",
     type: "seller",
     liked: [2, 4, 6],
