@@ -2,6 +2,7 @@ import React, { PureComponent } from 'react';
 import { connect } from 'react-redux'
 import { newUser } from '../actions/newUser'
 import { Link } from 'react-router-dom'
+import { assignId } from '../actions/newUser'
 
 
 class createUser extends PureComponent {
@@ -26,12 +27,11 @@ class createUser extends PureComponent {
 
     handleSubmit = (event) => {
         event.preventDefault()
-        this.props.newUser(this.state.name, this.state.age, this.state.description, this.state.type)
-
+        const newUser = this.props.newUser(this.state.name, this.state.age, this.state.description, this.state.type)
+        console.log(newUser)
+        this.props.assignId(newUser)
     }
 
-    
-    
     render(){
 
         if (!this.state) return 'Loading...'
@@ -64,7 +64,7 @@ class createUser extends PureComponent {
                     </label>
 
                     <label>
-                        <select value={this.state.type} name="type" onChange={this.handleChange.bind(this)}>
+                        <select value={this.state.type} name="type" onChange={this.handleChange.bind(this)} defaultValue="buyer">
                             <option value="buyer">Adopt</option>
                             <option value="seller">Sell</option>
                         </select>
@@ -92,5 +92,5 @@ const mapStateToProps = (state) => {
 
 
 
-export default connect (mapStateToProps, {newUser})(createUser)
+export default connect (mapStateToProps, { newUser, assignId })(createUser)
 
