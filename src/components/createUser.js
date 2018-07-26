@@ -15,14 +15,6 @@ class createUser extends PureComponent {
     handleChange (evt) {
         this.setState({ [evt.target.name]: evt.target.value });
     }
-    // handleChange = (event) => {
-    //     this.setState({
-    //         name: event.target.value,
-    //         age: event.target.value,
-    //         description: event.target.value
-    //     })
-    // }
-
 
     handleSubmit = (event) => {
         event.preventDefault()
