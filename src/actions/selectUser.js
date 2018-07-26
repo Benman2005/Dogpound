@@ -1,8 +1,8 @@
 export const SELECT_USER = 'SELECT_USER'
 
-export function selectUser() {
+export function selectUser(id) {
     return {
       type: SELECT_USER,
-      payload: console.log("hello")
+      payload: id
     }
   } 
