@@ -75,35 +75,35 @@ export const userData = [{
 
 {
     id: 8,
-    name: "",
-    age: 45,
-    description: "",
-    photo: "",
+    name: "Hillary",
+    age: 60,
+    description: "Looking for dogs",
+    photo: "http://d1marr3m5x4iac.cloudfront.net/images/edpborder500/I0-001/027/544/486-1.jpeg_/hillary-clinton-86.jpeg",
     type: "buyer",
-    liked: [5, 8, 9],
+    liked: [],
     disliked: []
 },
 
 {
     id: 9,
-    name: "",
-    age: 45,
-    description: "",
-    photo: "",
+    name: "Bea",
+    age: 88,
+    description: ":)",
+    photo: "https://www.mommyonline.nl/images/koningin-beatrix.jpg",
     type: "buyer",
-    liked: [5, 8, 9],
+    liked: [16,13],
     disliked: []
 },
 
 
 {
     id: 10,
-    name: "",
+    name: "Cesar",
     age: 45,
-    description: "",
-    photo: "",
+    description: "This app makes me soooo happy",
+    photo: "https://i2.wp.com/www.projectcasting.com/wp-content/uploads/2015/02/cesar-millan.jpg?fit=534%2C401",
     type: "buyer",
-    liked: [5, 8, 9],
+    liked: [12, 15],
     disliked: []
 },
 
