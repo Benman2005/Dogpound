@@ -121,10 +121,10 @@ export const userData = [{
     id: 11,
     name: "Tommy",
     age: 8,
-    description: "some text some text some text some text",
+    description: "I am cutest in others",
     photo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-hoES3DgrGpl4fNpk_KZwBSItx9o1vAkQmUCPiu1mh2j-5-oT",
     type: "seller",
-    liked: [1, 3, 11],
+    liked: [1, 3, 10],
     disliked: []
 },
 {
@@ -141,10 +141,10 @@ export const userData = [{
     id: 13,
     name: "Dirk",
     age: 11,
-    description: "some text some text some text some text",
+    description: "I am always sleepy! yawn!",
     photo: "https://www.dog-health-guide.org/image-files/newsite-main-banner.jpg",
     type: "seller",
-    liked: [1, 3, 11],
+    liked: [1, 3, 10],
     disliked: []
 
 },
@@ -152,7 +152,7 @@ export const userData = [{
     id: 14,
     name: "Sean",
     age: 13,
-    description: "some text some text some text some text",
+    description: "I am sad! please take me to your home.",
     photo: "https://news.liverpool.ac.uk/wp-content/uploads/2016/01/Fat-dog.jpg",
     type: "seller",
     liked: [3, 4],
@@ -163,10 +163,63 @@ export const userData = [{
     id: 15,
     name: "Bart",
     age: 99,
-    description: "some text some text some text some text",
+    description: "The food is not good here ...please take me.",
     photo: "http://www.repstatic.it/content/localirep/img/rep-firenze/2015/12/25/182827200-41eb5066-759b-4d31-b0a0-008a1ea9b9f8.jpg",
     type: "seller",
-    liked: [4, 11],
+    liked: [4, 10],
+    disliked: []
+
+},
+{
+    id: 16,
+    name: "LOL",
+    age: 8,
+    description: "I am white! :D",
+    photo: "https://datarepository.wolframcloud.com/resources/images/b05/b056639d-d5c3-4358-a422-89fa7ce6ab1a-io-2-o.en.gif",
+    type: "seller",
+    liked: [1, 3, 10],
+    disliked: []
+},
+{
+    id: 17,
+    name: "Saviour",
+    age: 2,
+    description: "I am the Shephard of my teritorry",
+    photo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe-a0jejoSbNA_MWGRj8eHgIqSL2kr4LI8xalyd6KGktjQ8ePOTw",
+    type: "seller",
+    liked: [2, 4],
+    disliked: []
+},
+{
+    id: 18,
+    name: "Apple",
+    age: 11,
+    description: "Hello people!, Can you handle my style? ",
+    photo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_jq__pYx9Y26yIELB7_jHnZte_zKS0FWqnQ8E6puaby7B1yjj",
+    type: "seller",
+    liked: [1, 3, 10],
+    disliked: []
+
+},
+{
+    id: 19,
+    name: "Samsung",
+    age: 13,
+    description: "My name is samsung ",
+    photo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxt-AJGE-3KClHnYBU9nv9BK3B3JNBHUB-bfgNHTlP3VVL9LGg",
+    type: "seller",
+    liked: [3, 4],
+    disliked: []
+
+},
+{
+    id: 20,
+    name: "iDog",
+    age: 12,
+    description: "A tiger screwed my mom thats how I born !!!",
+    photo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTas3ln0GQKN8R8D6tPz6Y9OT5dl64Aj_780x23bVrK5P_7iP6Kyw",
+    type: "seller",
+    liked: [4, 10],
     disliked: []
 
 }
