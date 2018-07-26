@@ -10,7 +10,7 @@ export const userData = [{
 },
 {
     id: 2,
-    name: "Dick",
+    name: "David",
     age: 34,
     description: "I love dogs, like really love them. Naked.",
     photo: "https://images-na.ssl-images-amazon.com/images/I/51b8Km-8V2L.jpg",
@@ -21,7 +21,7 @@ export const userData = [{
 },
 {
     id: 3,
-    name: "Melvin",
+    name: "Chuck",
     age: 56,
     description: "Hearting dogs since my wife passed.",
     photo: "https://celebrityspeakersbureau.com/wp-content/uploads/2017/01/chuck-norris.jpg",
@@ -31,7 +31,7 @@ export const userData = [{
 },
 {
     id: 4,
-    name: "Dwight",
+    name: "Jean-Claude",
     age: 45,
     description: "Got dogs?",
     photo: "https://cdn.images.dailystar.co.uk/dynamic/1/281x351/181580_1.jpg",
@@ -39,8 +39,86 @@ export const userData = [{
     liked: [5, 8, 9],
     disliked: []
 },
+
 {
     id: 5,
+    name: "Steven",
+    age: 12,
+    description: "Got cats to?",
+    photo: "https://mr.comingsoon.it/imgdb/persone/1128.jpg",
+    type: "buyer",
+    liked: [5, 8, 9],
+    disliked: []
+},
+
+{
+    id: 6,
+    name: "Xena",
+    age: 32,
+    description: "Its me!",
+    photo: "https://www.writeups.org/wp-content/uploads/Xena-Warrior-Princess-Lawless-profile-h.jpg",
+    type: "buyer",
+    liked: [5, 8, 9],
+    disliked: []
+},
+
+{
+    id: 7,
+    name: "Arnold",
+    age: 156,
+    description: "",
+    photo: "",
+    type: "buyer",
+    liked: [5, 8, 9],
+    disliked: []
+},
+
+{
+    id: 8,
+    name: "",
+    age: 45,
+    description: "",
+    photo: "",
+    type: "buyer",
+    liked: [5, 8, 9],
+    disliked: []
+},
+
+{
+    id: 9,
+    name: "",
+    age: 45,
+    description: "",
+    photo: "",
+    type: "buyer",
+    liked: [5, 8, 9],
+    disliked: []
+},
+
+
+{
+    id: 10,
+    name: "",
+    age: 45,
+    description: "",
+    photo: "",
+    type: "buyer",
+    liked: [5, 8, 9],
+    disliked: []
+},
+
+
+
+
+
+
+
+
+
+
+
+{
+    id: 11,
     name: "Tommy",
     age: 8,
     description: "some text some text some text some text",
@@ -50,7 +128,7 @@ export const userData = [{
     disliked: []
 },
 {
-    id: 6,
+    id: 12,
     name: "Rachel",
     age: 2,
     description: "some text some text some text some text",
@@ -60,7 +138,7 @@ export const userData = [{
     disliked: []
 },
 {
-    id: 7,
+    id: 13,
     name: "Dirk",
     age: 11,
     description: "some text some text some text some text",
@@ -71,7 +149,7 @@ export const userData = [{
 
 },
 {
-    id: 8,
+    id: 14,
     name: "Sean",
     age: 13,
     description: "some text some text some text some text",
@@ -82,7 +160,7 @@ export const userData = [{
 
 },
 {
-    id: 9,
+    id: 15,
     name: "Bart",
     age: 99,
     description: "some text some text some text some text",
