@@ -36,6 +36,7 @@ class createUser extends PureComponent {
         if (!this.state) return 'Loading...'
         if (this.props.name) return (
             <div>
+                {`Hi ${this.props.name.toUpperCase()}, are you looking to adopt or sell a dog?`}
                     <button><Link to="/buy">ADOPT!</Link></button>
 
                     <button><Link to="/sell">GIVE UP up for adoption..</Link></button> 
@@ -45,6 +46,7 @@ class createUser extends PureComponent {
             <div>
             
                 <form name="form" onSubmit={this.handleSubmit} >
+                
                 
                     <label>Name: 
                         <input type='text' name="name" value={this.state.name} onChange={this.handleChange.bind(this)}></input>
@@ -59,9 +61,7 @@ class createUser extends PureComponent {
                     <button onSubmit={this.handleSubmit}> SUBMIT JA</button>
                 </form>
             
-                {this.props.name && `Hi ${this.props.name.toUpperCase()}, are you looking to adopt or sell a dog?`}
-                    
-{/*                    
+{/*             
                     <button><Link to="/buy">ADOPT!</Link></button>
 
                     <button><Link to="/sell">GIVE UP up for adoption..</Link></button> } */}
