@@ -66,7 +66,7 @@ export const userData = [{
     id: 7,
     name: "Arnold",
     age: 156,
-    description: "",
+    description: "Get into the chaupper. I'll be back",
     photo: "https://consequenceofsound.files.wordpress.com/2018/03/arnold.png?w=807",
     type: "buyer",
     liked: [17],
