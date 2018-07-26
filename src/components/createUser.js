@@ -26,22 +26,26 @@ class createUser extends PureComponent {
 
     handleSubmit = (event) => {
         event.preventDefault()
-        this.props.newUser(this.state.name, this.state.age, this.state.description)
+        this.props.newUser(this.state.name, this.state.age, this.state.description, this.state.type)
 
     }
+
     
     
     render(){
 
         if (!this.state) return 'Loading...'
-        if (this.props.name) return (
+        if (this.props.type === 'seller') return (
             <div>
-                {`Hi ${this.props.name.toUpperCase()}, are you looking to adopt or sell a dog?`}
-                    <button><Link to="/buy">ADOPT!</Link></button>
+                {`Hi ${this.props.name} so you'd like to give your dog up for adoption...`}
+                <button></button>
+            </div> )
 
-                    <button><Link to="/sell">GIVE UP up for adoption..</Link></button> 
-            </div>
-        )
+        if (this.props.type ==='buyer') return (
+            <div>
+            {`Hi ${this.props.name} so you'd like to adopt a dog...`}
+            </div> )
+        
         return (
             <div>
             
@@ -57,14 +61,17 @@ class createUser extends PureComponent {
                     <label>Description:
                         <input type='text' onChange={this.handleChange.bind(this)} name="description" value={this.state.description}></input>
                     </label>
+
+                    <label>
+                        <select value={this.state.type} name="type" onChange={this.handleChange.bind(this)}>
+                            <option value="buyer">Adopt</option>
+                            <option value="seller">Sell</option>
+                        </select>
+                    </label>
             
                     <button onSubmit={this.handleSubmit}> SUBMIT JA</button>
                 </form>
-            
-{/*             
-                    <button><Link to="/buy">ADOPT!</Link></button>
-
-                    <button><Link to="/sell">GIVE UP up for adoption..</Link></button> } */}
+        
                     
             </div>
 
@@ -76,7 +83,8 @@ const mapStateToProps = (state) => {
     return {
         name: state.likeFunction.name,
         age: state.likeFunction.age,
-        description: state.likeFunction.description
+        description: state.likeFunction.description,
+        type: state.likeFunction.type
     }
 }
 
