@@ -5,7 +5,7 @@ export const userData = [{
     description: "I love long walks on the beach. Naked.",
     photo: "https://cdn.images.express.co.uk/img/dynamic/79/590x/02f22reynolds1-494677.jpg",
     type: "buyer",
-    liked: [9, 7, 5, 11],
+    liked: [911],
     disliked: []
 },
 {
@@ -15,7 +15,7 @@ export const userData = [{
     description: "I love dogs, like really love them. Naked.",
     photo: "https://images-na.ssl-images-amazon.com/images/I/51b8Km-8V2L.jpg",
     type: "buyer",
-    liked: [7, 6],
+    liked: [12, 15],
     disliked: []
     
 },
@@ -26,7 +26,7 @@ export const userData = [{
     description: "Hearting dogs since my wife passed.",
     photo: "https://celebrityspeakersbureau.com/wp-content/uploads/2017/01/chuck-norris.jpg",
     type: "buyer",
-    liked: [9, 8, 11],
+    liked: [19],
     disliked: []
 },
 {
@@ -36,7 +36,7 @@ export const userData = [{
     description: "Got dogs?",
     photo: "https://cdn.images.dailystar.co.uk/dynamic/1/281x351/181580_1.jpg",
     type: "buyer",
-    liked: [5, 8, 9],
+    liked: [20],
     disliked: []
 },
 
@@ -47,7 +47,7 @@ export const userData = [{
     description: "Got cats to?",
     photo: "https://mr.comingsoon.it/imgdb/persone/1128.jpg",
     type: "buyer",
-    liked: [5, 8, 9],
+    liked: [12],
     disliked: []
 },
 
@@ -58,7 +58,7 @@ export const userData = [{
     description: "Its me!",
     photo: "https://www.writeups.org/wp-content/uploads/Xena-Warrior-Princess-Lawless-profile-h.jpg",
     type: "buyer",
-    liked: [5, 8, 9],
+    liked: [11],
     disliked: []
 },
 
@@ -66,10 +66,10 @@ export const userData = [{
     id: 7,
     name: "Arnold",
     age: 156,
-    description: "",
-    photo: "",
+    description: "Get into the chaupper. I'll be back",
+    photo: "https://consequenceofsound.files.wordpress.com/2018/03/arnold.png?w=807",
     type: "buyer",
-    liked: [5, 8, 9],
+    liked: [17],
     disliked: []
 },
 
