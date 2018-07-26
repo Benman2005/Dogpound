@@ -1,22 +1,23 @@
 import {LIKE_USER} from '../actions/likeUser'
 import {DISLIKE_USER} from '../actions/disLikeFunction'
 import {MATCH_USER} from '../actions/matched'
+import {NEW_USER} from '../actions/newUser'
 
-const initialState = 
-{ id: 11,
-name: "Mandy",
-age: 16,
-description: "",
-photo: "",
-type: "",
-liked: [],
-disliked: [],
-matched: []
+const initialState = {
+  
 }
 
 
+
 const reducer = (state = initialState, action = {}) => {
-    switch (action.type) {
+  switch (action.type) {
+    case NEW_USER:
+      return action.payload
+        // [...state, action.payload]
+        // {name: [...state.name, action.payload.name],}
+        // age: [...state.age, action.payload.age],
+        // description: [...state.description, action.payload.description]
+      
     case LIKE_USER: 
       return {
     ...state, 
