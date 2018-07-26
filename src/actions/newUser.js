@@ -1,4 +1,9 @@
 export const NEW_USER = 'NEW_USER'
+export const ASSIGN_ID = 'ASSIGN_ID'
+
+
+
+
 
 export function newUser(name, age, description, type) {
     return {
@@ -10,7 +15,8 @@ export function newUser(name, age, description, type) {
           type,
           liked: [],
           disliked: [],
-          matched: []
+          matched: [],
+        
       }
     }
 }
