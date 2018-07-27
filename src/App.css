@@ -110,9 +110,13 @@
 }
 
 .profileImage {
-  max-height: 200%;
-  max-width: 100%;
-  border-radius: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 300px;
+  width: 260px;
+  object-fit: cover;
+
 }
 
 
