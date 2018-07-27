@@ -39,9 +39,9 @@ class SellerPage extends PureComponent {
     
     render(){
         return (
-        <div>
+        <div className="container-contact100">
             <h1></h1>
-        
+            <div className="wrap-contact100">
             <div> 
                 <img className = "profileImage" src={this.props.user.photo}></img>
             </div>
@@ -64,6 +64,7 @@ class SellerPage extends PureComponent {
             </div>
             {/* <Matches matched={this.props.matched} /> */}
         </div>
+        </div> 
         )
     }
 }
