@@ -53,10 +53,6 @@ export  class BuyerPage extends PureComponent {
                     <img className = "profileImage" src ={this.props.user.photo}></img>
                 </div>
                 <div>
-                  
-                {/* <div>
-                    {this.props.user.age}
-                </div> */}
                <div className="contact100-form-title"></div>
                <p>
                     {this.props.user.description}
