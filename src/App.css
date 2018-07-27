@@ -110,8 +110,9 @@
 }
 
 .profileImage {
-  max-height: 400px;
-  max-width: 400px;
+  max-height: 200%;
+  max-width: 100%;
+  border-radius: 10px;
 }
 
 
@@ -119,7 +120,7 @@ ul {
   list-style-type: none;
 }
 
-button{
+.likeDislike{
   background:#1AAB8A;
   color:#fff;
   border:none;
@@ -131,11 +132,11 @@ button{
   transition:800ms ease all;
   outline:none;
 }
-button:hover{
+.likeDislike:hover{
   background:#fff;
   color:#1AAB8A;
 }
-button:before,button:after{
+.likeDislike:before,.likeDislike:after{
   content:'';
   position:absolute;
   top:0;
@@ -145,13 +146,13 @@ button:before,button:after{
   background: #1AAB8A;
   transition:400ms ease all;
 }
-button:after{
+.likeDislike:after{
   right:inherit;
   top:inherit;
   left:0;
   bottom:0;
 }
-button:hover:before,button:hover:after{
+.likeDislike:hover:before,.likeDislike:hover:after{
   width:100%;
   transition:800ms ease all;
 }

@@ -42,19 +42,21 @@ class SellerPage extends PureComponent {
         <div className="container-contact100">
             <h1></h1>
             <div className="wrap-contact100">
-            <div> 
-                <img className = "profileImage" src={this.props.user.photo}></img>
-            </div>
-            <div>
+            <div className="contact100-form-title" >
                 {this.props.user.name}
             </div>
-            <div>
+            {/* <div className="contact100-form-title">
                 {this.props.user.age}
+            </div> */}
+            <div> 
+                <img className = "profileImage" src={this.props.user.photo}></img>        
             </div>
-            <div>
+           <div className="contact100-form-title"></div>
+           <p >
                 {this.props.user.description}
-            </div>
-            
+            </p>
+      
+           
             <div>
                 <button  className = "dislike" onClick ={this.handleDislike}>ME NO LIKE!</button> 
                 <button  className="like" onClick={this.handleLike}>LIKE!</button> 
