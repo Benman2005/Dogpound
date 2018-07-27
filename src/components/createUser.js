@@ -55,7 +55,7 @@ logOut=()=>{
           <Link to="/sell"> 
           <button className="goButton">
              <span>
-                      Okay :/
+                      See adopters!
                       <i
                         className="fa fa-long-arrow-right m-l-7"
                         aria-hidden="true"
