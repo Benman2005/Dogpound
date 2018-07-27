@@ -193,3 +193,9 @@ ul {
   width:100%;
   transition:800ms ease all;
 }
+
+.goBack{
+  position: absolute;
+    top: 10%;
+    border: 3px solid #73AD21;
+}
