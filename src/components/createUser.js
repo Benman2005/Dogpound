@@ -42,7 +42,7 @@ logOut=()=>{
       return (
         <div>
           <div className="container-contact100">
-          <div className="logout"><img src ="https://cdn2.iconfinder.com/data/icons/flaticons-stroke/16/logout-1-512.png" width="20px" height="20px"></img>
+          <div className="logout" onClick={this.logOut}><img src ="https://cdn2.iconfinder.com/data/icons/flaticons-stroke/16/logout-1-512.png" width="20px" height="20px"></img>
       </div>
 
             <div className="wrap-contact100">
@@ -70,7 +70,7 @@ logOut=()=>{
     else if (this.props.type === "buyer")
       return (
        <div>
-         <div className="logout"><img src ="https://cdn2.iconfinder.com/data/icons/flaticons-stroke/16/logout-1-512.png" width="20px" height="20px"></img>
+         <div className="logout" onClick={this.logOut}><img src ="https://cdn2.iconfinder.com/data/icons/flaticons-stroke/16/logout-1-512.png" width="20px" height="20px"></img>
       </div>
           <div className="container-contact100">
             <div className="wrap-contact100">

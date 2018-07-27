@@ -27,7 +27,7 @@ class UserDetails extends PureComponent{
         {console.log(this.props.matched.find(findName).photo)}
         
         return (
-            <div>
+            <div className="container-contact100">
                 {console.log(this.props.matched[0].name)    }
                 {console.log(this.props.matched)    }
                 <div>
