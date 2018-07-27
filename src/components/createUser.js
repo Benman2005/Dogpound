@@ -43,12 +43,22 @@ class createUser extends PureComponent {
             <div className="wrap-contact100">
             <span className="contact100-form-title"><Link to="/"><img src="https://i.pinimg.com/originals/d2/cc/2a/d2cc2a2b8da27f79e2bbb1ea59a23f3c.png" width="200px" height="200px"></img></Link></span>
             </div>
-          {`Hi ${
+            <div className ="contact100-form-title"> {`Hi ${
             this.props.name
           } so you'd like to give your dog up for adoption...`}
-          <button>
-            <Link to="/sell"> See available adopters! </Link>
-          </button>
+          <div className="container-contact100-form-btn">
+          <Link to="/sell"> 
+          <button className="goButton">
+             <span>
+                      Okay :/
+                      <i
+                        className="fa fa-long-arrow-right m-l-7"
+                        aria-hidden="true"
+                      ></i>
+                    </span> </button></Link>
+          
+        </div>
+        </div>
         </div>
         </div>
       );

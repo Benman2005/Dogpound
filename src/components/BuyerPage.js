@@ -41,24 +41,26 @@ export  class BuyerPage extends PureComponent {
           }
 
         return (
-            <div>
-                <div>
-                    <h1>
-                        Look at these cute little doggies
-                    </h1>     
+            
+            <div className="container-contact100">
+            <div className="goBack"><Link to ="/"> Go Back </Link></div>
+            <div className="wrap-contact100">
+            
+            <div className="contact100-form-title" >  
+            {this.props.user.name}
                 </div>
                 <div>
                     <img className = "profileImage" src ={this.props.user.photo}></img>
                 </div>
                 <div>
-                    {this.props.user.name}
-                </div>
-                <div>
+                  
+                {/* <div>
                     {this.props.user.age}
-                </div>
-                <div>
+                </div> */}
+               <div className="contact100-form-title"></div>
+               <p>
                     {this.props.user.description}
-                </div>
+                </p>
                 <div>
                 </div>
                 <div>
@@ -68,6 +70,8 @@ export  class BuyerPage extends PureComponent {
                 <div>
                 <button><Link to="/matches">See my matches</Link></button>
                 </div>
+                </div>
+            </div>
             </div>
         )
     }

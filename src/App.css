@@ -110,9 +110,13 @@
 }
 
 .profileImage {
-  max-height: 200%;
-  max-width: 100%;
-  border-radius: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 300px;
+  width: 260px;
+  object-fit: cover;
+
 }
 
 
@@ -192,4 +196,27 @@ ul {
 .goButton:hover:before,.goButton:hover:after{
   width:100%;
   transition:800ms ease all;
+}
+
+
+.goBack{
+  position: absolute;
+    top: 5%;
+    right: 500px;
+      /* position: relative; */
+       padding: 10px;
+       height:  10px;
+       /* margin: 120px auto;
+       width: 310px; */
+       /* background: #ff0030;
+       color: #fff;
+       font-size: 20px;
+       font-weight: bold;
+       line-height: 1.3em;
+       border: 2px dashed #fff;
+       border-radius: 10px;
+       box-shadow: 0 0 0 4px #ff0030, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+       text-shadow: -1px -1px #aa3030;
+       font-weight: normal; */
+    
 }
