@@ -16,8 +16,8 @@ class MatchesContainer extends React.PureComponent {
     
     render(){
         function NoMatches() {
-            return <p>No matches yet.. go back to keep swiping..
-            <button><Link to="/">Back</Link></button></p> 
+            return <div className="container-contact100">No matches yet.. go back to keep swiping..
+            <button><Link to="/"> Back</Link></button></div> 
           }
         
         if (this.props.matched.length === 0){
@@ -27,7 +27,7 @@ class MatchesContainer extends React.PureComponent {
         }
         
         else return (
-            <div>   
+            <div className="container-contact100">
             <Matches matched={this.props.matched} selectUser={this.selectUser}/>
 
             </div>

@@ -22,7 +22,9 @@ class createUser extends PureComponent {
   //         description: event.target.value
   //     })
   // }
-
+logOut=()=>{
+  window.location.reload()
+}
   handleSubmit = event => {
     event.preventDefault();
     const newUser = this.props.newUser(
@@ -40,12 +42,15 @@ class createUser extends PureComponent {
       return (
         <div>
           <div className="container-contact100">
+          <div className="logout"><img src ="https://cdn2.iconfinder.com/data/icons/flaticons-stroke/16/logout-1-512.png" width="20px" height="20px"></img>
+      </div>
+
             <div className="wrap-contact100">
             <span className="contact100-form-title"><Link to="/"><img src="https://i.pinimg.com/originals/d2/cc/2a/d2cc2a2b8da27f79e2bbb1ea59a23f3c.png" width="200px" height="200px"></img></Link></span>
             </div>
             <div className ="contact100-form-title"> {`Hi ${
             this.props.name
-          } so you'd like to give your dog up for adoption...`}
+          }, so you'd like to give your dog up for adoption...`}
           <div className="container-contact100-form-btn">
           <Link to="/sell"> 
           <button className="goButton">
@@ -56,23 +61,23 @@ class createUser extends PureComponent {
                         aria-hidden="true"
                       ></i>
                     </span> </button></Link>
-          
+          </div>
         </div>
         </div>
         </div>
-        </div>
+        
       );
     else if (this.props.type === "buyer")
       return (
-       
+       <div>
+         <div className="logout"><img src ="https://cdn2.iconfinder.com/data/icons/flaticons-stroke/16/logout-1-512.png" width="20px" height="20px"></img>
+      </div>
           <div className="container-contact100">
             <div className="wrap-contact100">
             <span className="contact100-form-title"><Link to="/"><img src="https://i.pinimg.com/originals/d2/cc/2a/d2cc2a2b8da27f79e2bbb1ea59a23f3c.png" width="200px" height="200px"></img></Link></span>
             </div>
-          <div className ="contact100-form-title">{` Hi ${this.props.name} so you'd like to adopt a dog...`}
+          <div className ="contact100-form-title">{` Hi ${this.props.name}, so you'd like to adopt a dog...`}
           <div className="container-contact100-form-btn">
-                {/* <div className="wrap-contact100-form-btn">
-                  <div className="contact100-form-bgbtn" /> */}
                  <Link to="/buy">
                   <button
                     className="goButton"
@@ -86,6 +91,7 @@ class createUser extends PureComponent {
                     </span>
                   </button>
                   </Link>
+                  </div>
                   </div>
                   </div>
                   </div>
