@@ -6,10 +6,10 @@ import { Link } from 'react-router-dom'
 export default function Matches(props){
 
     return(
-
-        <div>
+            <div className= "matchcontainer">
+            
             <ul>
-            {props.matched.map(match => <li key={match.id}> <Link to={ `/users/${match.name}` }><img className="match-photo" src={match.photo} ></img></Link> </li>)}
+            {props.matched.map(match => <div className="pics"><li className="matchpic" key= {match.id}> <Link to={ `/users/${match.name}` }><img src={match.photo} ></img></Link> </li></div>)}
             
             </ul>
         </div>

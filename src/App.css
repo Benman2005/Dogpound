@@ -193,3 +193,27 @@ ul {
   width:100%;
   transition:800ms ease all;
 }
+
+.matchcontainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 25px;
+  justify-content: center;
+  width:20%;
+}
+
+.pics{
+  max-height: 25%;
+  height: 25%;
+  border: solid;
+  border-width: 8px;
+  border-color :#f2f7ff;
+}
+
+.matchpic {
+  max-height: 25%;
+  height: 25%;
+  width: auto;
+  height: auto;
+}
