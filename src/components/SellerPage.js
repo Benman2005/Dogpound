@@ -42,7 +42,7 @@ class SellerPage extends PureComponent {
         <div className="container-contact100">
          <div>
          <span className="logo"><Link to="/"><img src="https://i.pinimg.com/originals/d2/cc/2a/d2cc2a2b8da27f79e2bbb1ea59a23f3c.png" width="200px" height="200px"></img></Link></span>
-            <button ><Link to="/matches" className="goBack" ><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzqSFXQwH9nSrig5JH--ySyiNAf7Z7YXbZXaZds20J5JSkZDMUzA" height="70px" width="70px" ></img></Link></button>
+            <button ><Link to="/matches" className="goBack" ><img src="https://www.shareicon.net/download/2016/02/14/718971_paw_512x512.png" height="70px" width="70px" ></img></Link></button>
             </div>
         {/* <div ><Link to ="/"> Go Back </Link></div> */}
             <div className="wrap-contact100">
