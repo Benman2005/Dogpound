@@ -230,4 +230,14 @@ ul {
   flex-wrap: wrap;
   padding: 10px;
   justify-content: center;
+
+}
+
+.pics img{
+  height: 200px;
+  width: 200px;
+  object-fit: contain;
+  border: 50px;
+  border-color: white;
+
 }
