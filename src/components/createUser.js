@@ -22,9 +22,11 @@ class createUser extends PureComponent {
   //         description: event.target.value
   //     })
   // }
+
 logOut=()=>{
   window.location.reload()
 }
+
   handleSubmit = event => {
     event.preventDefault();
     const newUser = this.props.newUser(

@@ -36,8 +36,11 @@ class SellerPage extends PureComponent {
         this.checkMatch(this.props.user.id)
     }
    
+
+
     
     render(){
+        if (!this.props.id) return "Create a profile first .... "
         return (
         <div className="container-contact100">
         <div className="goBack"><Link to ="/"> Go Back </Link></div>
