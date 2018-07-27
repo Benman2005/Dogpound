@@ -40,7 +40,10 @@ class SellerPage extends PureComponent {
     render(){
         return (
         <div className="container-contact100">
-        <div className ="goBack"><Link to ="/"> Go Back </Link></div>
+         <div>
+            <button ><Link to="/matches" className="goBack" ><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT21QXEElcz4venITWZD1XmideA3R1BM706V9v0oiLAbItA10EG" height="50px" width="50px" ></img></Link></button>
+            </div>
+        {/* <div ><Link to ="/"> Go Back </Link></div> */}
             <div className="wrap-contact100">
             <div className="contact100-form-title" >
                 {this.props.user.name}
@@ -61,9 +64,7 @@ class SellerPage extends PureComponent {
                 <button  className = "dislike" onClick ={this.handleDislike}>ME NO LIKE!</button> 
                 <button  className="like" onClick={this.handleLike}>LIKE!</button> 
             </div>
-             <div>
-            <button><Link to="/matches">See my matches</Link></button>
-            </div>
+            
             {/* <Matches matched={this.props.matched} /> */}
         </div>
         </div> 

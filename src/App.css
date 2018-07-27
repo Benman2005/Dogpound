@@ -200,6 +200,22 @@ ul {
 
 .goBack{
   position: absolute;
-    top: 10%;
-    border: 3px solid #73AD21;
+    top: 5%;
+    right: 500px;
+      /* position: relative; */
+       padding: 10px;
+       height:  10px;
+       /* margin: 120px auto;
+       width: 310px; */
+       /* background: #ff0030;
+       color: #fff;
+       font-size: 20px;
+       font-weight: bold;
+       line-height: 1.3em;
+       border: 2px dashed #fff;
+       border-radius: 10px;
+       box-shadow: 0 0 0 4px #ff0030, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+       text-shadow: -1px -1px #aa3030;
+       font-weight: normal; */
+    
 }
