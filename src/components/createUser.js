@@ -22,9 +22,11 @@ class createUser extends PureComponent {
   //         description: event.target.value
   //     })
   // }
+
 logOut=()=>{
   window.location.reload()
 }
+
   handleSubmit = event => {
     event.preventDefault();
     const newUser = this.props.newUser(
@@ -55,7 +57,7 @@ logOut=()=>{
           <Link to="/sell"> 
           <button className="goButton">
              <span>
-                      Okay :/
+                      See adopters!
                       <i
                         className="fa fa-long-arrow-right m-l-7"
                         aria-hidden="true"
