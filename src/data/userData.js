@@ -55,24 +55,22 @@ export const userData = [{
     id: 6,
     name: "Xena",
     age: 32,
-    description: "Its me!",
+    description: "Its me, Xena!",
     photo: "https://www.writeups.org/wp-content/uploads/Xena-Warrior-Princess-Lawless-profile-h.jpg",
     type: "buyer",
     liked: [11, 13],
     disliked: []
 },
-
 {
     id: 7,
     name: "Arnold",
-    age: 156,
-    description: "Get to the chopper. I'll be back",
+    age: 61,
+    description: "GET TO THE CHOPPER, DOGGY!!",
     photo: "https://consequenceofsound.files.wordpress.com/2018/03/arnold.png?w=807",
     type: "buyer",
     liked: [14, 16, 17],
     disliked: []
 },
-
 {
     id: 8,
     name: "Hillary",
@@ -83,45 +81,31 @@ export const userData = [{
     liked: [17, 19],
     disliked: []
 },
-
 {
     id: 9,
     name: "Bea",
     age: 88,
-    description: ":)",
+    description: "Queen o dem bitchez",
     photo: "https://www.mommyonline.nl/images/koningin-beatrix.jpg",
     type: "buyer",
     liked: [13, 16, 20],
     disliked: []
 },
-
-
 {
     id: 10,
     name: "Cesar",
     age: 45,
-    description: "This app makes me soooo happy",
+    description: "This app makes me soooo happy. Remember to remain calm and assertive.",
     photo: "https://i2.wp.com/www.projectcasting.com/wp-content/uploads/2015/02/cesar-millan.jpg?fit=534%2C401",
     type: "buyer",
     liked: [12, 15],
     disliked: []
 },
-
-
-
-
-
-
-
-
-
-
-
 {
     id: 11,
     name: "Tommy",
     age: 8,
-    description: "I am cutest in others",
+    description: "Top Dogg since 2009",
     photo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-hoES3DgrGpl4fNpk_KZwBSItx9o1vAkQmUCPiu1mh2j-5-oT",
     type: "seller",
     liked: [1, 3, 10],
@@ -131,7 +115,6 @@ export const userData = [{
     id: 12,
     name: "Rachel",
     age: 2,
-
     description: "I have the pretiest smile ...:D ",
     photo: "https://cdn.psychologytoday.com/sites/default/files/styles/article-inline-half/public/field_blog_entry_images/2018-02/vicious_dog_0.png?itok=nsghKOHs",
     type: "seller",
@@ -176,7 +159,7 @@ export const userData = [{
     name: "LOL",
     age: 8,
     description: "I am white! :D",
-    photo: "https://datarepository.wolframcloud.com/resources/images/b05/b056639d-d5c3-4358-a422-89fa7ce6ab1a-io-2-o.en.gif",
+    photo: "https://video-images.vice.com/articles/58f7bfc7691cd44e59685ed0/lede/1492631497526-stoned-dog.jpeg?crop=0.562534435261708xw%3A1xh%3Bcenter%2Ccenter&resize=650%3A*&output-quality=55",
     type: "seller",
     liked: [1, 3, 10],
     disliked: []
@@ -185,7 +168,7 @@ export const userData = [{
     id: 17,
     name: "Saviour",
     age: 2,
-    description: "I am the Shephard of my teritorry",
+    description: "I am the Shephard of my territory",
     photo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe-a0jejoSbNA_MWGRj8eHgIqSL2kr4LI8xalyd6KGktjQ8ePOTw",
     type: "seller",
     liked: [7, 8, 9],
@@ -206,7 +189,7 @@ export const userData = [{
     id: 19,
     name: "Samsung",
     age: 13,
-    description: "My name is Samsung ",
+    description: "My name is Samsung. Yes my owner was an asshole ",
     photo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxt-AJGE-3KClHnYBU9nv9BK3B3JNBHUB-bfgNHTlP3VVL9LGg",
     type: "seller",
     liked: [2, 6],
@@ -215,10 +198,10 @@ export const userData = [{
 },
 {
     id: 20,
-    name: "iDog",
+    name: "Rupert",
     age: 12,
-    description: "The tiger look I got because of my Mom's choice !!!",
-    photo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTas3ln0GQKN8R8D6tPz6Y9OT5dl64Aj_780x23bVrK5P_7iP6Kyw",
+    description: "Yes, I know i look like your dad. People have mentioned",
+    photo: "https://kiwikidsnews.co.nz/wp-content/uploads/2018/03/dog-that-looks-like-ahuman-300x336.jpeg",
     type: "seller",
     liked: [4, 7, 9],
     disliked: []
