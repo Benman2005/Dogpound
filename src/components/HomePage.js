@@ -10,14 +10,18 @@ export default class StartPage extends PureComponent {
     render(){
 
         return (
-        <div>
-            Welcome to the Dogpound!
+            <div>
+            <div className="container-contact100">
+            <div className="wrap-contact100">
+            <span className="contact100-form-title"><Link to="/"><img src="https://i.pinimg.com/originals/d2/cc/2a/d2cc2a2b8da27f79e2bbb1ea59a23f3c.png" width="200px" height="200px"></img></Link></span>
+            </div>
             <div>
             <button><Link to="/buy">I want to adopt a dog!</Link></button>
             </div>
             <div>
             <button><Link to="/sell">I want to give my dog up for adoption..</Link></button>
             </div>
+        </div>
         </div>
         )
     }

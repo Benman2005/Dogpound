@@ -39,6 +39,10 @@ class createUser extends PureComponent {
     if (this.props.type === "seller")
       return (
         <div>
+          <div className="container-contact100">
+            <div className="wrap-contact100">
+            <span className="contact100-form-title"><Link to="/"><img src="https://i.pinimg.com/originals/d2/cc/2a/d2cc2a2b8da27f79e2bbb1ea59a23f3c.png" width="200px" height="200px"></img></Link></span>
+            </div>
           {`Hi ${
             this.props.name
           } so you'd like to give your dog up for adoption...`}
@@ -46,23 +50,42 @@ class createUser extends PureComponent {
             <Link to="/sell"> See available adopters! </Link>
           </button>
         </div>
+        </div>
       );
     else if (this.props.type === "buyer")
       return (
-        <div>
-          {`Hi ${this.props.name} so you'd like to adopt a dog...`}
-          <button>
-            <Link to="/buy"> Have a look at the dogs! </Link>
-          </button>
-        </div>
+       
+          <div className="container-contact100">
+            <div className="wrap-contact100">
+            <span className="contact100-form-title"><Link to="/"><img src="https://i.pinimg.com/originals/d2/cc/2a/d2cc2a2b8da27f79e2bbb1ea59a23f3c.png" width="200px" height="200px"></img></Link></span>
+            </div>
+          <div className ="contact100-form-title">{` Hi ${this.props.name} so you'd like to adopt a dog...`}
+          <div className="container-contact100-form-btn">
+                {/* <div className="wrap-contact100-form-btn">
+                  <div className="contact100-form-bgbtn" /> */}
+                 <Link to="/buy">
+                  <button
+                    className="goButton"
+                  >
+                    <span>
+                      Cant wait to see? Then click :D
+                      <i
+                        className="fa fa-long-arrow-right m-l-7"
+                        aria-hidden="true"
+                      ></i>
+                    </span>
+                  </button>
+                  </Link>
+                  </div>
+                  </div>
+                  </div>
       );
 
     return (
       <div>
         <div className="container-contact100">
           <div className="wrap-contact100">
-            {/* <form class="contact100-form validate-form"> */}
-            <span className="contact100-form-title"><img src="https://i.pinimg.com/originals/d2/cc/2a/d2cc2a2b8da27f79e2bbb1ea59a23f3c.png" width="200px" height="200px"></img></span>
+            <span className="contact100-form-title"><Link to="/"><img src="https://i.pinimg.com/originals/d2/cc/2a/d2cc2a2b8da27f79e2bbb1ea59a23f3c.png" width="200px" height="200px"></img></Link></span>
             <form
               className="contact100-form validate-form"
               name="form"
@@ -82,7 +105,12 @@ class createUser extends PureComponent {
                   onChange={this.handleChange.bind(this)}
                 />
                 <span className="focus-input100" />
-              </div>
+                </div>
+                <div
+                className="wrap-input100 validate-input"
+                data-validate="Age is required"
+              >
+              
                 <span className="label-input100">Age</span>
                 <input
                   className="input100"
@@ -93,12 +121,8 @@ class createUser extends PureComponent {
                   value={this.state.age}
                 />
                 <span className="focus-input100" />
-              <div
-                className="wrap-input100 validate-input"
-                data-validate="Age is required"
-              >
-              </div>
-              
+                </div>
+             
               <div className="wrap-input100 input100-select">
                 <span className="label-input100">Looking to :</span>
                 <div>

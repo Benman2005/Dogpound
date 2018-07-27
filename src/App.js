@@ -28,9 +28,6 @@ class App extends Component {
       <Provider store={store}>
 
         <div className="App">
-          <header className="App-header"><Link to="/"><h1>DOGPOUND</h1></Link></header>
-
-
         <div> 
           <main>
             <Route exact path="/buy" component={BuyerPage} />
