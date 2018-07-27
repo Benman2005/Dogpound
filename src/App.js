@@ -7,7 +7,7 @@ import BuyerPage from './components/BuyerPage'
 import SellerPage from './components/SellerPage'
 import createUser from './components/createUser'
 import MatchesContainer from './components/MatchesContainer'
-import UserDetailsContainer from './components/UserDetailsContainer'
+import UserDetails from './components/UserDetails'
 import { Link } from 'react-router-dom'
 
 
@@ -26,7 +26,7 @@ class App extends Component {
             <Route exact path="/sell" component={SellerPage} />
             <Route exact path="/" component={createUser} />
             <Route exact path="/matches" component={MatchesContainer} />
-            <Route exact path="/users/:user" component={UserDetailsContainer} />
+            <Route exact path="/users/:user" component={UserDetails} />
 
           </main> 
         </div>

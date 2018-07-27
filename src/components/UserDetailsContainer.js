@@ -1,10 +1,26 @@
 import React, {PureComponent} from 'react'
-import UserDetails from './UserDetails'
+import UserDetails from './components/UserDetails'
+import { connect } from 'react-redux'
+
+
 
 class UserDetailsContainer extends PureComponent{
+    componentDidMount(){
+
+    }
     render(){
-        return <UserDetails  />
+        return  <UserDetails user={this.props.matched} />
+    }
+
+    mapStateToProps(){
+
+    }
+}
+const mapStateToProps = (state) => {
+    return {
+        matched: state.likeFunction.matched,
+
     }
 }
 
-export default UserDetailsContainer
+export default connect (mapStateToProps)(UserDetailsContainer)

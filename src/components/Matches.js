@@ -14,7 +14,6 @@ export default function Matches(props){
             </ul>
         </div>
     )
-
 }
 
 // onClick={() => props.selectUser(match.id)}
