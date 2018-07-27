@@ -70,9 +70,10 @@ logOut=()=>{
     else if (this.props.type === "buyer")
       return (
        <div>
+         <div className="container-contact100">
          <div className="logout" onClick={this.logOut}><img src ="https://cdn2.iconfinder.com/data/icons/flaticons-stroke/16/logout-1-512.png" width="20px" height="20px"></img>
       </div>
-          <div className="container-contact100">
+          
             <div className="wrap-contact100">
             <span className="contact100-form-title"><Link to="/"><img src="https://i.pinimg.com/originals/d2/cc/2a/d2cc2a2b8da27f79e2bbb1ea59a23f3c.png" width="200px" height="200px"></img></Link></span>
             </div>
