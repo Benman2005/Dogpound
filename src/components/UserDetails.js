@@ -28,23 +28,33 @@ class UserDetails extends PureComponent{
         
         return (
             <div className="container-contact100">
+            
+            <div className="wrap-contact100">
                 {console.log(this.props.matched[0].name)    }
                 {console.log(this.props.matched)    }
-                <div>
+                <div className="contact100-form-title"></div>
+                 <p>  Name: {this.props.matched.find(findName).name}
+                </p>
+                <div  >
 
-                <img src={this.props.matched.find(findName).photo}></img>
+                <img className = "profileImage" src={this.props.matched.find(findName).photo}></img>
                 </div>
-                <div>
-                    Name: {this.props.matched.find(findName).name}
-                </div>
-                <div>
+                
+                <div><p>
                     Age: {this.props.matched.find(findName).age}
+                    </p>
                 </div>
                 <div>
+                    <p>
                 Description: {this.props.matched.find(findName).description}
+                </p>
                 </div>
-                <Link to="/matches">Go back to your matches</Link>
+                <div>
+                <button><Link to="/matches">Go Back to matches</Link></button>
+                </div>
             </div>
+            </div>
+           
         )
     }
    

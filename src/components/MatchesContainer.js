@@ -24,58 +24,72 @@ class MatchesContainer extends React.PureComponent {
           }
         function BackToSell(){
             return (
-                <div>
+                <div className="container-contact100"> 
+                <div className="wrap-contact100">
                     <p>Go back to swiping :)
                 <button><Link to="/sell">Back</Link></button></p> 
+                </div>
                 </div>
             )
         }
         function BackToBuy(){
             return (
-                <div>
+                <div className="container-contact100"> 
+                <div className="wrap-contact100">
                     <p>Go back to swiping :)
                     <button><Link to="/buy">Back</Link></button></p> 
+                </div>
                 </div>
             )
         }
         
         if (this.props.matched.length === 0 && this.props.type === "seller"){
               return (
-                  <div>
+                <div className="container-contact100"> 
+                <div className="wrap-contact100">
               <p> No matches yet.. </p>
                <BackToSell />
+                </div>
                 </div>
             )
         }
         if (this.props.matched.length === 0 && this.props.type === "buyer"){
             return (
-                <div>
+                <div className="container-contact100"> 
+                <div className="wrap-contact100">
               <p> No matches yet.. </p>
               <BackToBuy />
+                </div>
                 </div>
           )
       }
         if (this.props.type === "seller"){
             return (
-                <div>
+                <div className="container-contact100"> 
+                <div className="wrap-contact100">
                     <Matches matched={this.props.matched} selectUser={this.selectUser}/>
                     <BackToSell />
+                </div>
                 </div>
             )
         }
         if (this.props.type === "buyer"){
             return (
-                <div>
+                <div className="container-contact100"> 
+                <div className="wrap-contact100">
                     <Matches matched={this.props.matched} selectUser={this.selectUser}/>
                     <BackToBuy />
+                </div>
                 </div>
             
             )
         }
         else return (
-            <div className="container-contact100">
+            <div className="container-contact100"> 
+            <div className="wrap-contact100">
             <Matches matched={this.props.matched} selectUser={this.selectUser}/>
 
+            </div>
             </div>
         )
     }

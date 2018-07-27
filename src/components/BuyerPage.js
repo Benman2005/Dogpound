@@ -45,7 +45,6 @@ export  class BuyerPage extends PureComponent {
             <div className="container-contact100">
             <div className="goBack"><Link to ="/"> Go Back </Link></div>
             <div className="wrap-contact100">
-            
             <div className="contact100-form-title" >  
             {this.props.user.name}
                 </div>

@@ -9,7 +9,7 @@ export default function Matches(props){
         <div className="container-contact100">
             
             <ul>
-            {props.matched.map(match => <div className="pics"><li className="matchpic" key= {match.id}> <Link to={ `/users/${match.name}` }><img src={match.photo} ></img></Link> </li></div>)}
+            {props.matched.map(match => <div className="pics profileImage"><li className="matchpic" key= {match.id}> <Link to={ `/users/${match.name}` }><img src={match.photo} ></img></Link> </li></div>)}
             
             </ul>
         </div>
